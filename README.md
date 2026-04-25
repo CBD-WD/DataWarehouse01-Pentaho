@@ -27,7 +27,7 @@ Se ha implementado un **Modelo en Estrella**, seleccionado por su alto rendimien
 
 
 ## 📁 Estructura del Repositorio
-* 📁 `/sql`: Scripts DDL para la creación de tablas, secuencias y claves de identidad.
+* 📁 `/sql`: Scripts para la creación de tablas, secuencias y claves de identidad.
 * 📁 `/pentaho`: Transformación `.ktr` que contiene la lógica de limpieza y carga.
 * 📁 `/data`: Archivo fuente original `radiacionuv.csv`.
 * 📁 `/docs`: Memoria técnica detallada del proyecto.
