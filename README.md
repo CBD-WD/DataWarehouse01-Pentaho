@@ -40,7 +40,8 @@ Se ha implementado un **Modelo en Estrella**, seleccionado por su alto rendimien
 3.  **Driver JDBC de Oracle** (`ojdbc8.jar`) copiado en la carpeta `data-integration/lib`.
 
 ### Pasos para ejecutar
-1.  **Base de Datos (Configuración del esquema):** Ejecuta el siguiente bloque como usuario SYSTEM para preparar el entorno:
+1. **Descargar el repositorio:** Descarga este repositorio y mantén la estructura. 
+2.  **Base de Datos (Configuración del esquema):** Ejecuta el siguiente bloque como usuario SYSTEM para preparar el entorno:
     ```sql
     -- 1. Entrar en el contenedor correcto (Oracle 21c XE)
     ALTER SESSION SET CONTAINER = XEPDB1;
@@ -55,8 +56,8 @@ Se ha implementado un **Modelo en Estrella**, seleccionado por su alto rendimien
     -- 4. Ejecutar los scripts de las tablas en este orden:
     --    01_DIM_CIUDAD.sql -> 02_DIM_TIEMPO.sql -> 03_FACT_RADIACION.sql
     ```
-2.  **Configuración ETL:** Abre Pentaho Spoon y carga el archivo `.ktr`.
-3.  **Conexión:** Ajusta la conexión de base de datos con los siguientes parámetros:
+3.  **Configuración ETL:** Abre Pentaho Spoon y carga el archivo `.ktr`.
+4.  **Conexión:** Ajusta la conexión de base de datos con los siguientes parámetros:
     * **Connection name:** CON_METEO_ESTRELLA
     * **Host Name:** localhost
     * **Database Name:** /XEPDB1
