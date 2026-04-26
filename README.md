@@ -1,6 +1,6 @@
 # ☀️ Sistema de Business Intelligence: Monitoreo de Radiación UV (AEMET)
 
-Este proyecto ha sido desarrollado para la asignatura de **Componentes de Bases de Datos**. El objetivo es el diseño e implementación de un almacén de datos (Data Warehouse) que centralice y analice los niveles de radiación ultravioleta en España utilizando datos oficiales de la **AEMET**.
+Este proyecto ha sido desarrollado para la asignatura de **Complementos de Bases de Datos**. El objetivo es el diseño e implementación de un almacén de datos (Data Warehouse) que centralice y analice los niveles de radiación ultravioleta en España utilizando datos oficiales de la **AEMET**.
 
 ## 👥 Autoras
 * **Olga Cantalejo Gómez**
