@@ -46,7 +46,7 @@ Se ha implementado un **Modelo en Estrella**, seleccionado por su alto rendimien
     ALTER SESSION SET CONTAINER = XEPDB1;
 
     -- 2. Crear el usuario del proyecto
-    CREATE USER METEO_ESTRELLA IDENTIFIED BY "tu_contraseña";
+    CREATE USER METEO_ESTRELLA IDENTIFIED BY "tu_contrasena";
 
     -- 3. Asignar permisos y cuota de almacenamiento
     GRANT CONNECT, RESOURCE, DBA TO METEO_ESTRELLA;
@@ -57,10 +57,13 @@ Se ha implementado un **Modelo en Estrella**, seleccionado por su alto rendimien
     ```
 2.  **Configuración ETL:** Abre Pentaho Spoon y carga el archivo `.ktr`.
 3.  **Conexión:** Ajusta la conexión de base de datos con los siguientes parámetros:
-    * **Host:** localhost
-    * **Puerto:** 1521
-    * **Service Name:** /XEPDB1
-4.  **Ejecución:** Pulsa el botón "Run" en Pentaho para iniciar la carga de las 59 filas de datos.
+    * **Connection name:** CON_METEO_ESTRELLA
+    * **Host Name:** localhost
+    * **Database Name:** /XEPDB1
+    * **Port Number:** 1521
+    * **Username:** METEO_ESTRELLA
+    * **Password:** "tu_contrasena" 
+5.  **Ejecución:** Pulsa el botón "Run" en Pentaho para iniciar la carga de las 59 filas de datos.
 
 ## ⚠️ Retos Técnicos Superados
 * **Error ORA-12505 (Conectividad)**: Resolución de conflictos de conexión mediante la transición de configuración por SID a Service Name (/XEPDB1), necesaria para la arquitectura de Oracle 21c XE.
